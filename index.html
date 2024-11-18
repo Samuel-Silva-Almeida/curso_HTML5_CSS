@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -96,7 +96,7 @@
     <!-- Uma Tabela é composta de linhas, que são compostas de celulas
             > <tr></tr> São Linhas (são rows)
             > <th></th> Define o cabeçalho de uma tabela
-            > <td></td> Colocas os nossos dados dentro da tabela 
+            > <td></td> Coloca os nossos dados dentro da tabela 
             > <caption></caption> Informar do que é nossa tabela
      -->
 
@@ -125,6 +125,81 @@
             <td>Não iniciado</td>
         </tr>
      </table>
+
+<hr>
+
+     <h1>Formulários</h1>
+
+     <form>
+
+        <!--Email -->
+
+        <label for="email">Seu e-mail:</label>
+        <input type="email" name="email" id="email"> <br> <br>
+
+        <!-- A tag <placeholder> serve como uma legenda para dar direcionamento ao usuario -->
+        <!-- A tag <required> deixa o como como obrigatorio-->
+
+        <label for="pnome">Primeiro Nome</label>
+        <input type="text" id="pnome" name="pnome" placeholder="Seu primeiro nome" required>
+
+        <label for="unome">Último Nome</label>
+        <input type="text" id="unome" name="unome" placeholder="Seu último nome" required> <br> <br>
+
+        <!-- Tipo RADIO -->
+        <Label>
+            <strong>Qual seu nível como programador atualmente?</strong>
+        </Label> 
+        <br>
+        <label>
+            <input type="radio" name="nivel" value="iniciante" checked> Sou iniciante.
+        </label>
+        <label>
+            <input  type="radio" name="nivel" value="medio"> Comecei a pouco tempo.
+        </label>
+        <labe>
+            <input type="radio" name="nivel" value="avancado"> Sou avançado.
+        </labe> <br> <br>
+        
+        <!--Tipo SELECT -->
+        <label for="escolaridade">
+            <strong>Sua escolaridade</strong>
+        </label>
+        <select id="escolaridade" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Educação Básica</option>
+            <option>Ensino Médio</option>
+            <option>Ensino Superior</option>
+            <option>Pós Graduação</option>
+        </select> <br> <br>
+
+        <!-- CHECKBOX-->
+        <label>
+            <strong>Selecione as tecnologias que você conhece:</strong>
+        </label>  <br> <br>
+
+        <input type="checkbox" id="tecnologia1" name="tecenologia1" value="HTML">
+        <label for="tecnologia1"> HTML</label>
+
+        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+        <label for="tecnologia2"> CSS</label>
+
+        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+        <label for="tecnologia3"> JavaScript</label>
+
+        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+        <label for="tecnologia4"> PHP</label>
+        <br> <br>
+
+        <!--Tipo DATE-->
+        <label for="nascimento">Data Nascimento</label>
+        <input type="datetime-local" name="nascimento" id="nascimento">
+
+        <br> <br>
+        <input type="submit" value="Cadastrar">
+
+     </form>
+
 
 </body>
 
